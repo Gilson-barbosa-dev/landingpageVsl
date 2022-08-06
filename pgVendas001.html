@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stilo.css" />
+    <script src="https://kit.fontawesome.com/16e8c720e8.js" crossorigin="anonymous"></script>
+    <title>Pagina de vendas</title>
+</head>
+<body>
+
+    <!-- Hedline -->
+    <div id="headline">
+    <h2>Como um <b>Influenciador</b> bomba o Perfil poucos minutos</h2>
+    </div>
+
+    <!-- Logo FALTA CENTRALIZAR-->
+    <span id="logo"><img src="./img/logo.png" width="200" height="150"></span>
+    
+    <!-- Titulo do anuncio-->
+    <div>
+    <h2 class="titulo">DESCUBRA COMO INFLUENCERS ESTÃO <br> BOMBANDO <span style="color:#F20071"> SEUS PERFIS EM MINUTOS </span>DE MODO RÁPIDO E FÁCIL</h2>
+    </div>
+
+    <!--Alerta para ligar o audio do vídeo ou uma segunda chamada-->
+    <div id="alerta"><i class="fa-solid fa-headphones-simple"> </i> Verifique se o seu áudio está ligado </div>
+    
+    <!-- Vídeo -->
+    <div id="frame">
+    <iframe  id="borda" width="870" height="460" src="https://www.youtube.com/embed/hr0h44LdSL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!--Segunda chamada-->
+    <div id="chamada"> <br><i class="fa-solid fa-circle-exclamation"> </i>&nbsp;CADASTRO GRATUITO PARA TODOS<br>  </div>
+
+
+	<!------------------------------------SETA + BOTÃO + GARANTIA---------------------------------------------------->
+    
+	<!--Seta -->
+    <div class="containeer">
+        <span class="circle">
+          <i class="fa fa-arrow-down"></i>
+        </span>
+        <span class="pulse"></span>
+      </div>
+     
+    <!--Primeiro CTA-->
+    <div class="CTA">
+        <a href="http://www.google.com.br"> 
+        <button> <b> SIM, QUERO BOMBAR MEU PERFIL </b><br> <span style="font-size: 18px"> ATENÇÃO: CADASTRO GRÁTIS </span></button> 
+        </a>        
+    </div>
+
+	<!--Pagamento seguro-->
+	<div id="pagamento">
+	<img src="./img/cta-pay.png.webp" width="450px">
+	</div>
+	<span id="zero"><i class="fa-solid fa-circle-check"> </i>&nbsp;RISCO ZERO! 7 DIAS DE GARANTIA.</span>
+
+   <!------------------------------------BOTÃO + GARANTIA---------------------------------------------------->
+    <!-- Comentários Facebook-->
+    <div class="container">
+		<div class="col-md-12" id="fbcomment">
+			<div class="header_comment">
+				<div class="row">
+					<div class="col-md-6 text-left">
+					  <span class="count_comment">2635 Comentários</span>
+					</div>
+					<div class="col-md-6 text-right">
+					  <span class="sort_title">Ordenar por</span>
+					  <select class="sort_by">
+						<option>Recentes</option>
+						<option>Mais novo</option>
+						<option>Mais antigo</option>
+					  </select>
+					</div>
+				</div>
+			</div>
+
+			<div class="body_comment">
+				<div class="row">
+					<div class="avatar_comment col-md-1">
+					  <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
+					</div>
+					<div class="box_comment col-md-11">
+					  <textarea class="commentar" placeholder="Adicionar coment..."></textarea>
+					  <div class="box_post">
+						<div class="pull-left">
+						  <input type="checkbox" id="post_fb"/>
+						  <label for="post_fb">Publique também no Facebook</label>
+						</div>
+						<div class="pull-right">
+						  <span>
+							<img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar" />
+							<!--<i class="fa fa-caret-down"></i>-->
+						  </span>
+						  <button onclick="submit_comment()" type="button" value="1">Publicar</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="row">
+					<ul id="list_comment" class="col-md-12">
+						
+                        <!-- COMENTÁRIO 1 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/avatar-f13cc171ad13b5cf59d8c234c76a9e28.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Wandersson Rodrigo</h4>
+								<p>Eu sempre adquiro mais seguidores com essa ferramenta, fácil de usar demais! Meu insta já ta bom, agora vou bombar meu Tiktok</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>3m</span>
+								</div>
+
+                         <!-- COMENTÁRIO 2 -->       
+
+								<ul class="child_replay">
+									<li class="box_reply row">
+										<div class="avatar_comment col-md-1">
+											<img src="./comentario/10.jpg" alt="avatar"/>
+										</div>
+										 <div class="result_comment col-md-11">
+											<h4>Edimar Santana</h4>
+											<p>Todos influenciadores grandes compram seguidores e ninguem fala rs</p>
+											<div class="tools_comment">
+												<a class="like" href="#">Curtir</a>
+												<span aria-hidden="true"> · </span>
+												<a class="replay" href="#">Responder</a>
+												<span aria-hidden="true"> · </span>
+												<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+												<span aria-hidden="true"> · </span>
+												<span>5m</span>
+											</div>
+											<ul class="child_replay"></ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						
+						<!-- COMENTÁRIO 3 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/5.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Claudio Nascimento</h4>
+								<p>Cara eu coloquei 10.000 seguidores no insta da minha empresa em questão de 5 minutos. Da mais credibilidade ao insta</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>12m</span>
+								</div>
+								<ul class="child_replay"></ul>
+
+                        <!-- COMENTÁRIO 4 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/141.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Rodrigo Samuel</h4>
+								<p>Irado vou comprar agrr</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>18m</span>
+								</div>
+								<ul class="child_replay"></ul>
+
+                         <!-- COMENTÁRIO 5 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/17.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Felipe Mallman</h4>
+								<p>É muito rápido irmão rs Eu coloquei no do cantor que trabalho</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>22m</span>
+								</div>
+								<ul class="child_replay"></ul>
+
+                            <!-- COMENTÁRIO 6 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/23.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Maycon Dias</h4>
+								<p>Caraaaaca q foda mano</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>26m</span>
+								</div>
+								<ul class="child_replay"></ul>
+
+                             <!-- COMENTÁRIO 7 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/14.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Edna Fontes</h4>
+								<p>eu estava super desconfiada, mas vendo que muita gente coloca seguidores no Insta, vou também</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>32m</span>
+								</div>
+								<ul class="child_replay"></ul>
+
+                            <!-- COMENTÁRIO 8 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/8.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Juliana Trindade</h4>
+								<p>Amiga, é muito comum a Flavia colocou 40 mil no dela e vende anúncios pra varias lojas do bairro</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>38m</span>
+								</div>
+								<ul class="child_replay"></ul>
+
+                            <!-- COMENTÁRIO 9 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/7.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Sebastinão Zanino</h4>
+								<p>Que massa. Não sabia que era assim facinho rs</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>42m</span>
+								</div>
+								<ul class="child_replay"></ul>
+
+                             <!-- COMENTÁRIO 10 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="./comentario/4.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>José Savio</h4>
+								<p>Na minha cidade eu sou o que tem mais seguidores no insta, uso muito!</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Curtir</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Responder</a>
+									<span aria-hidden="true"> · </span>
+									<!--<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> -->
+									<span aria-hidden="true"> · </span>
+									<span>55m</span>
+								</div>
+								<ul class="child_replay"></ul>
+							</div>
+						</li>
+					</ul>
+                    </div>
+					</li>
+					</ul>
+                    <button class="show_more" type="button">Carregar mais 10 comentários</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+	
+	<!------------------------------------SETA + BOTÃO + GARANTIA---------------------------------------------------->
+    
+	<!--Seta -->
+    <div class="containeer">
+        <span class="circle">
+          <i class="fa fa-arrow-down"></i>
+        </span>
+        <span class="pulse"></span>
+      </div>
+     
+    <!--Primeiro CTA-->
+    <div class="CTA">
+        <a href="http://www.google.com.br"> 
+        <button id="cta"> <b> SIM, QUERO BOMBAR MEU PERFIL </b><br> <span style="font-size: 18px"> ATENÇÃO: CADASTRO GRÁTIS </span></button> 
+        </a>        
+    </div>
+
+	<!--Pagamento seguro-->
+	<div id="pagamento">
+	<img src="./img/cta-pay.png.webp" width="450px">
+	</div>
+	<span id="zero"><i class="fa-solid fa-circle-check"> </i>&nbsp;RISCO ZERO! 7 DIAS DE GARANTIA.</span>
+
+   <!------------------------------------BOTÃO + GARANTIA---------------------------------------------------->
+
+    <!--Copyright-->
+    <div id="copy">   
+	<div>
+		<h2>PIRATARIA É CRIME</h2>
+	</div>
+	<div>
+		<p>A venda do DESSE PRODUTO  só pode ser realizada através deste site. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados. NÃO adquira programas parecidos e que não são baseados em muito tempo de estudo. Não nos responsabilizamos por compras realizadas em outros sites.</p>
+		<p>Aviso: Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como uma garantia de resultados.</p>
+	</div>
+	<footer>Copyright 2022 - GILSON BARBOSA ® Todos os direitos reservados.</footer>
+	<div id="termo"> TERMOS DE USO &nbsp; POLÍTICAS DE PRIVACIDADE</div>
+</div>
+</body>
+</html>
+
+
+
